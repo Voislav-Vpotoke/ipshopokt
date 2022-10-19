@@ -6,7 +6,7 @@ const Form = () => {
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
-    const {tg} = useTelegram();oktyabrsk
+    const {tg} = useTelegram();
 
     const onSendData = useCallback(() => {
         const data = {
@@ -56,20 +56,20 @@ const Form = () => {
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Фамилия И.О.'}
+                placeholder={'Страна'}
                 value={country}
                 onChange={onChangeCountry}
             />
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Адрес, Телефон'}
+                placeholder={'Улица'}
                 value={street}
                 onChange={onChangeStreet}
             />
             <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'oktyabrsk'}>Октябрьск</option>
-                <option value={'nextcity'}>Другой город</option>
+                <option value={'physical'}>Физ. лицо</option>
+                <option value={'legal'}>Юр. лицо</option>
             </select>
         </div>
     );

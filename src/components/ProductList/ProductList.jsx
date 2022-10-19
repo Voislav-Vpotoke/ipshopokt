@@ -5,13 +5,14 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Обмен рессивера на Триколор ТВ', price: 2500, description: 'Любого оператора'},
-    {id: '2', title: 'Обмен старого рессивера на новый', price: 5500, description: '4K'},
-    {id: '3', title: 'Рессивер НТВ +', price: 4500, description: ''},
-    {id: '4', title: 'Рессивер МТС', price: 4500, description: ''},
-    {id: '5', title: 'Рессивер Телекарта', price: 5000, description: ''},
-    {id: '6', title: 'Приемник Т2', price: 1350, description: ''},
-  
+    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
+    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
+    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
+    {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая'},
+    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
+    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая'},
+    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
+    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
 ]
 
 const getTotalPrice = (items = []) => {
