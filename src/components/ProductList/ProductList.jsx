@@ -5,14 +5,13 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая'},
-    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
-    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
+    {id: '1', title: 'Обмен оборудования Триколор ТВ', price: 5500, description: 'Ресивер 4К'},
+    {id: '2', title: 'Обмен оборудования Спец.предложение', price: 2500, description: 'Ресивер любого оператора обмен на Триколор ТВ'},
+    {id: '3', title: 'Ресивер НТВ +', price: 4500, description: 'подписка от 750 за год'},
+    {id: '4', title: 'Ресивер МТС', price: 4500, description: 'МТС Castpal DS 701'},
+    {id: '5', title: 'Ресивер Телекарта', price: 4900, description: 'EVO - 09'},
+    {id: '6', title: 'Приемник Т2', price: 1350, description: 'Cadena CDT-1791SB'},
+   
 ]
 
 const getTotalPrice = (items = []) => {
